@@ -1,0 +1,9 @@
+.leftside-conmtainer{
+    width: 20%;
+    max-height: 450px;
+    overflow: auto;
+    float: left;
+}
+.bcc{
+   background-color: ghostwhite;;
+}

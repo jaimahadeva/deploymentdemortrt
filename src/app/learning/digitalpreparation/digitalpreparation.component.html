@@ -1,0 +1,100 @@
+
+
+<div class="col-sm-12" style="width: 100%;">
+<div class="col-sm-4 leftside-conmtainer" >
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+
+
+  <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+ <div>
+    1
+ </div><br>
+
+</div>
+
+
+<div class="col-sm-8 bcc" style="width: 80%;float: left;">
+<div>
+    Add New Question
+</div>
+<div class="col-md-12">
+<form (ngSubmit)="onsibmit()" class="col-md-12">
+    <div class="col-md-12 form-group">
+        <label class="col-md-3"> Question </label>
+        <input  class="col-md-9"  style="width: 80%;padding-left: 4px;"type="text" name="question" id="question" class="form-control"
+        [(ngModel)]="digiAdd.question">
+        
+    </div> <br>
+    <div class="col-md-12 form-group" >
+        <label class="col-md-3"> Answer </label>
+        <textarea  class="col-md-9" style="width: 80%;padding-left: 20px;" type="text" name="answer" id="answer" class="form-control"
+        [(ngModel)]="digiAdd.answer"></textarea>
+    </div>
+    <div class="col-md-12">
+        <button style="text-align: center;" type="submit">submit</button>
+    </div>
+
+</form>
+</div>
+<div class="col-sm-12 pd-20" *ngFor="let questions of digiQuestions;let i=index">
+    <span style="padding-left: 20px;"> {{i + 1}})
+        .</span>
+    <span> {{questions.question}}</span>
+    <div style="padding-left: 30px;width: 80%;">
+        <span> {{questions.answer}}</span>
+    </div>
+ </div>
+
+ 
+</div>
+</div>
+
+
